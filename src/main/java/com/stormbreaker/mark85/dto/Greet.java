@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 @Data
-// using the @Data will automatically generate the getters, setters, and equals and hashcode method for all the fields
+// using the @Data will automatically generate the getters, setters, equals and hashcode method for all the fields
 
 @AllArgsConstructor
 // Generates a constructor with all the arguments

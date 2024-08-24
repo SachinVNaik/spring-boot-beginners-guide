@@ -5,3 +5,7 @@ server:
 spring:
   application:
     name: mark85
+
+  jpa:
+    hibernate:
+      ddl-auto: create

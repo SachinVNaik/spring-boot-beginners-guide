@@ -19,3 +19,9 @@ Example response
   "message": "You are welcome here"
 }
 ```
+
+## Accepting a request body in POST calls
+if we have a defined the contract of the request we can create a request body class and use that in the controller.
+for example [AddEmployeeRequestBody](./src/main/java/com/stormbreaker/mark85/requestbody/AddEmployeeRequestBody.java) used in the [EmployeeController](./src/main/java/com/stormbreaker/mark85/controller/EmployeeController.java)
+this also helps us add validation on the request parameters, as it's done for firstName, lastName and email.
+make sure to use `@Validated` annotation when accepting the request body so that the validation constraints are applied. 

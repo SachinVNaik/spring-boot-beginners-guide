@@ -42,7 +42,7 @@ public class DataSourceConfig {
         dataSource.setPassword(db_password);
         try {
             dataSource.getConnection();
-            logger.error("Successfully connected to database");
+            logger.info("Successfully connected to database");
         } catch (SQLException e) {
             logger.error("Something went wrong while connecting to database: {}", e.getMessage());
             logger.error(Arrays.toString(e.getStackTrace()));
