@@ -7,6 +7,8 @@ import org.hibernate.validator.constraints.Length;
 
 
 @Getter
+// only a getter is enough on request body classes
+// do not use setters as thees values should only be set from request, not from code
 public class AddEmployeeRequestBody {
 
     @Length(max = 20, message = "first name cannot exceed 20 characters")

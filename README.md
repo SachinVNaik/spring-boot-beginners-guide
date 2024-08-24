@@ -24,6 +24,9 @@ Example response
 # Request
 ## Accepting a request body in POST calls
 if we have a defined the contract of the request we can create a request body class and use that in the controller.
+<br> it's better to use a request body class rather a `JsonNode` object, reason being request body classes makes the validation easy
+<br> and if there are unnecessary parameters which you are not expecting in the request body, requests can be rejected easily with bad request.
+<br> and also using the request body class makes it easier to access those fields anywhere in the project.  
 
 for example [AddEmployeeRequestBody](./src/main/java/com/stormbreaker/mark85/requestbody/AddEmployeeRequestBody.java) used in the [EmployeeController](./src/main/java/com/stormbreaker/mark85/controller/EmployeeController.java)
 this also helps us add validation on the request parameters, as it's done for firstName, lastName and email.
