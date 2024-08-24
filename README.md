@@ -20,6 +20,7 @@ Example response
 }
 ```
 
+
 ## Accepting a request body in POST calls
 if we have a defined the contract of the request we can create a request body class and use that in the controller.
 
